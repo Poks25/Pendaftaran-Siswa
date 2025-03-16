@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Siswa Baru TK</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 400px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background: white; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+        label, input, select { display: block; width: 100%; margin-bottom: 10px; }
+        input[type="submit"] { background: green; color: white; border: none; padding: 10px; cursor: pointer; }
+        input[type="submit"]:hover { background: darkgreen; }
+        h2 { text-align: center; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Pendaftaran Siswa Baru TK</h2>
+        <p style="text-align: center; color: #666; font-size: 14px;">Silakan isi formulir di bawah ini dengan benar.</p>
+        <form action="proses_pendaftaran.php" method="POST">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" name="nama" placeholder="Masukkan nama lengkap" required>
+
+            <label for="usia">Usia:</label>
+            <input type="number" name="usia" placeholder="Masukkan usia" required>
+
+            <label for="alamat">Alamat:</label>
+            <input type="text" name="alamat" placeholder="Masukkan alamat" required>
+
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select name="jenis_kelamin" required>
+                <option value="">Pilih jenis kelamin</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+
+            
+            <input type="submit" value="Daftar">
+        </form>
+    </div>
+</body>
+</html>
